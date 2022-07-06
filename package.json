@@ -1,0 +1,15 @@
+{
+    "name": "toyoverse-dev-front",
+    "version": "1.0.0",
+    "description": "![](https://user-images.githubusercontent.com/19412160/149653806-b2c4ca54-1986-4481-bd61-721dbd8a7967.png)",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "compression": "^1.7.4",
+        "express": "^4.18.1"
+    }
+}
