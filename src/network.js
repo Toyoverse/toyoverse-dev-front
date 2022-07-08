@@ -22,4 +22,5 @@ Used to set the network: https://chainlist.org/
 338 Cronos Testnet
 */
 
-window.web3ChainId = 1;
+window.web3ChainId = 80001;
+window.web3NetworkName = "Matic Testnet";
