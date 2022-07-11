@@ -23,4 +23,3 @@ Used to set the network: https://chainlist.org/
 */
 
 window.web3ChainId = 80001;
-window.web3NetworkName = "Matic Testnet";
