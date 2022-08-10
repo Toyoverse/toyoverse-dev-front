@@ -137,6 +137,7 @@ const gasLimit = "222222" // gas limit
 const gasPrice = "333333333333"
 window.web3gl.sendContract(method, abi, contract, args, value, gasLimit, gasPrice)
 */
+/*
 async function sendContract(method, abi, contract, args, value, gasLimit, gasPrice) {
   const from = (await web3.eth.getAccounts())[0];
   new web3.eth.Contract(JSON.parse(abi), contract).methods[method](...JSON.parse(args))
@@ -152,6 +153,24 @@ async function sendContract(method, abi, contract, args, value, gasLimit, gasPri
     .on("error", (error) => {
       window.web3gl.sendContractResponse = error.message;
     });
+}*/
+
+async function sendContract(method, abi, contract, args, value, gasLimit, gasPrice) {
+  const from = (await web3.eth.getAccounts())[0];
+  new web3.eth.Contract(JSON.parse(abi), contract).methods[method](...JSON.parse(args))
+      .send({
+        from,
+        value,
+        gas: gasLimit ? gasLimit : undefined,
+        gasPrice: gasPrice ? gasPrice : undefined,
+      })
+      .on('confirmation', function(confirmationNumber, receipt){
+        debugger;
+        window.web3gl.sendContractResponse = receipt.transactionHash;
+      })
+      .on("error", (error) => {
+        window.web3gl.sendContractResponse = error.message;
+      });
 }
 
 // add new wallet to in metamask
