@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8d8de1f-bfb5-4743-b3fb-de74bfc84c11" name="Changes" comment="workspace.xml" />
+    <list default="true" id="b8d8de1f-bfb5-4743-b3fb-de74bfc84c11" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OpenBoxPublish.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OpenBoxPublish.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web3/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +37,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660158280419</updated>
       <workItem from="1660158300866" duration="741000" />
-      <workItem from="1660164479309" duration="469000" />
+      <workItem from="1660164479309" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="OpenBox v0.22">
       <created>1660158442727</created>
@@ -50,7 +53,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660164525683</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OpenBox v0.23">
+      <created>1660166234594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660166234594</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed index.js">
+      <created>1660171987172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660171987172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +90,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="OpenBox v0.22" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="OpenBox v0.23" />
+    <MESSAGE value="Changed index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed index.js" />
   </component>
 </project>

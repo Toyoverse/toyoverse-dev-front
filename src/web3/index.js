@@ -154,7 +154,6 @@ async function sendContract(method, abi, contract, args, value, gasLimit, gasPri
       window.web3gl.sendContractResponse = error.message;
     });
 }*/
-
 async function sendContract(method, abi, contract, args, value, gasLimit, gasPrice) {
   const from = (await web3.eth.getAccounts())[0];
   new web3.eth.Contract(JSON.parse(abi), contract).methods[method](...JSON.parse(args))
@@ -165,7 +164,6 @@ async function sendContract(method, abi, contract, args, value, gasLimit, gasPri
         gasPrice: gasPrice ? gasPrice : undefined,
       })
       .on('confirmation', function(confirmationNumber, receipt){
-        debugger;
         window.web3gl.sendContractResponse = receipt.transactionHash;
       })
       .on("error", (error) => {
