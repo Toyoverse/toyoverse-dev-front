@@ -164,7 +164,9 @@ async function sendContract(method, abi, contract, args, value, gasLimit, gasPri
         gasPrice: gasPrice ? gasPrice : undefined,
       })
       .on('confirmation', function(confirmationNumber, receipt){
-        window.web3gl.sendContractResponse = receipt.transactionHash;
+        if(confirmationNumber == 0){
+          window.web3gl.sendContractResponse = receipt.transactionHash;
+        }
       })
       .on("error", (error) => {
         window.web3gl.sendContractResponse = error.message;
