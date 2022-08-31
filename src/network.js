@@ -8,7 +8,7 @@ Used to set the network: https://chainlist.org/
 56 Binance Smart Chain Mainnet
 97 Binance Smart Chain Testnet
 100 xDai
-137 Matic
+137 Polygon Mainnet
 1287 Moonbase Testnet
 80001 Matic Testnet
 43113 Avalanche Testnet
@@ -22,5 +22,5 @@ Used to set the network: https://chainlist.org/
 338 Cronos Testnet
 */
 
-window.web3ChainId = 80001;
-window.web3NetworkName = "Matic Testnet";
+window.web3ChainId = 137;
+window.web3NetworkName = "Polygon Mainnet";
